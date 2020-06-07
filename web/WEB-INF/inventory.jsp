@@ -92,6 +92,7 @@
                 <input type="hidden" name="option" value="Add">
             </form>
 </c:if>
+            
 <c:if test="${control eq 'Edit'}">
             <h2>Edit Item</h2>
             <form method="post" action="inventory">
@@ -115,6 +116,7 @@
                 <input type="hidden" name="edit" value="${item.itemID}">
             </form>
 </c:if>
+            
 <!-- error message -->          
         <c:if test="${errorMsg ne null}">
             ${errorMsg}

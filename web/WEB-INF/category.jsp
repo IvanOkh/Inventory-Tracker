@@ -44,6 +44,7 @@
             </c:forEach>
                 
         </table>
+        
         <!-- add form -->          
         <c:if test="${control eq 'Add'}">
             <h2>Add Category</h2>
@@ -56,6 +57,7 @@
                 <input type="hidden" name="option" value="Add">
             </form>
         </c:if>
+            
         <!-- edit form -->  
         <c:if test="${control eq 'Edit'}"> 
             <h2>Edit Category Name</h2> 
@@ -68,5 +70,6 @@
                 <input type="hidden" name="edit" value="${category.categoryID}">
             </form>
         </c:if>
+            
     </body>
 </html>

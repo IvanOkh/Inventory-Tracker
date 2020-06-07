@@ -53,7 +53,7 @@ public class InventoryFilter implements Filter
         } 
         else 
         {
-            // so, send them to login page
+            // send them to login page
             session.invalidate();
             HttpServletResponse resp = (HttpServletResponse)response;
             resp.sendRedirect("login");

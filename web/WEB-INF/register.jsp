@@ -32,7 +32,8 @@
                 <li><a href ="account">My Account</li>
                 <li><a href ="login?logout">Log out<a></li>
             </ul> 
-         </c:if>  
+         </c:if>
+        <!-- error message -->           
          ${errorMsg}
     </body>
 </html>
