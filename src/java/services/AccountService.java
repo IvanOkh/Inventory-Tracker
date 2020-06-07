@@ -81,7 +81,6 @@ public int delete(String email) throws Exception
         boolean active = false;
         Role role = user.getRole();
         
-        //User n = new User(email,active,fname,lname,password);
         user.setActive(active);
         int r = udb.update(user);
         
@@ -100,7 +99,6 @@ public int delete(String email) throws Exception
         boolean active = true;
         Role role = user.getRole();
         
-        //User n = new User(email,active,fname,lname,password);
         user.setActive(active);
         int r = udb.update(user);
         
